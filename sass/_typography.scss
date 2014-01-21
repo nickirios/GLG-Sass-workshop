@@ -1,0 +1,8 @@
+@mixin regularFont {
+	font-family: helvetica, arial, sans-serif;
+}
+
+@mixin boldFont {
+	font-family: arial, sans-serif;
+	font-weight: bold;
+}

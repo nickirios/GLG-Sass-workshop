@@ -1,0 +1,68 @@
+@mixin clearfix {
+	clear: both;
+	&:after {
+		content: " ";
+		display: table;
+		clear: both;
+		height: 0;
+	}
+}
+
+/*
+@mixin white_cta_arrow {
+	position: relative;
+	padding-right: 20px;
+	&:after {
+		position: absolute;
+		top: 50%;
+		right: px-to-em(5px);
+		margin-top: -11px;
+		content: "";
+		height: 22px;
+		width: 22px;
+		background: #000 url(../img/main-sprite.png) no-repeat -0px -650px;
+	}
+}
+
+@mixin video_link {
+	position: relative;
+	padding-left: 20px;
+	&:before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		content: "";
+		height: 15px;
+		width: 16px;
+		background: url(../img/main-sprite.png) no-repeat -48px -616px;
+	}
+}
+
+@mixin yellow_cta_arrow {
+	position: relative;
+	padding-right: 20px;
+	&:after {
+		position: absolute;
+		bottom: 0;
+		right: px-to-em(5px);
+		content: "";
+		height: 18px;
+		width: 13px;
+		background: url(../img/main-sprite.png) no-repeat -294px -643px;
+	}
+}
+
+@mixin yellow_cta_arrow_before {
+	position: relative;
+	padding-left: 20px;
+	&:after {
+		position: absolute;
+		bottom: 0;
+		left: px-to-em(5px);
+		content: "";
+		height: 18px;
+		width: 13px;
+		background: url(../img/main-sprite.png) no-repeat -294px -661px;
+	}
+}
+*/
