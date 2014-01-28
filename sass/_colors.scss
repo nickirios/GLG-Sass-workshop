@@ -1,0 +1,30 @@
+//@reference http://sachagreif.com/sass-color-variables/
+
+/* -------------------------------------------------------------------------*/
+/* Descriptive
+ * @purpose define the colors
+ * @naming_convention generalColor_tintOrShade
+ */
+
+$white: #fff;
+$black: #000;
+$blue: #6DA4BC;
+$blue_dark: darken($blue,10%);
+
+/* -------------------------------------------------------------------------*/
+/* Functional
+ * @purpose where colors will be used
+ * @naming_convention contentType_purpose_specify
+ */
+
+$bodyFonts: $black;
+$select_color: $blue_dark;
+$select_borderColor: $blue_dark;
+
+/* Buttons & CTAs */
+$ctaLink: $blue_dark !default;
+$ctaLink_hover: $blue;
+
+/* Nav */
+
+/* Content Blocks */

@@ -64,70 +64,53 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/*
-@mixin white_cta_arrow {
-	position: relative;
-	padding-right: 20px;
-	&:after {
-		position: absolute;
-		top: 50%;
-		right: px-to-em(5px);
-		margin-top: -11px;
-		content: "";
-		height: 22px;
-		width: 22px;
-		background: #000 url(../img/main-sprite.png) no-repeat -0px -650px;
-	}
-}
-
-@mixin video_link {
-	position: relative;
-	padding-left: 20px;
-	&:before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: "";
-		height: 15px;
-		width: 16px;
-		background: url(../img/main-sprite.png) no-repeat -48px -616px;
-	}
-}
-
-@mixin yellow_cta_arrow {
-	position: relative;
-	padding-right: 20px;
-	&:after {
-		position: absolute;
-		bottom: 0;
-		right: px-to-em(5px);
-		content: "";
-		height: 18px;
-		width: 13px;
-		background: url(../img/main-sprite.png) no-repeat -294px -643px;
-	}
-}
-
-@mixin yellow_cta_arrow_before {
-	position: relative;
-	padding-left: 20px;
-	&:after {
-		position: absolute;
-		bottom: 0;
-		left: px-to-em(5px);
-		content: "";
-		height: 18px;
-		width: 13px;
-		background: url(../img/main-sprite.png) no-repeat -294px -661px;
-	}
-}
-*/
 /* -------------------------------------------------------------------------*/
-/* line 12, ../sass/screen.scss */
-*:first-child + html .clear {
-  min-height: 1px;
+/* line 9, ../sass/_grid.scss */
+.cols-1 {
+  width: 50%;
 }
 
+/* line 9, ../sass/_grid.scss */
+.cols-2 {
+  width: 100%;
+}
+
+/* -------------------------------------------------------------------------*/
+/* Descriptive
+ * @purpose define the colors
+ * @naming_convention generalColor_tintOrShade
+ */
+/* -------------------------------------------------------------------------*/
+/* Functional
+ * @purpose where colors will be used
+ * @naming_convention contentType_purpose_specify
+ */
+/* Buttons & CTAs */
+/* Nav */
+/* Content Blocks */
+/* line 2, ../sass/themes/_default.scss */
+.default .kitten-mug img, .kitten-mug .default img {
+  box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.6);
+}
+/* line 4, ../sass/themes/_default.scss */
+.default .kitten-mug img:hover, .kitten-mug .default img:hover {
+  transition: box-shadow 0.2s ease;
+  box-shadow: none;
+}
+
+/* line 2, ../sass/themes/_tmo.scss */
+.tmo .kitten-mug img, .kitten-mug .tmo img {
+  box-shadow: none;
+  border: 2px solid #e20074;
+}
+
+/* line 2, ../sass/themes/_modern.scss */
+.modern .kitten-mug img, .kitten-mug .modern img {
+  box-shadow: inset 0px 0px 10px #000;
+  border: 1px solid #fff;
+}
+
+/* -------------------------------------------------------------------------*/
 /* line 15, ../sass/screen.scss */
 * {
   -moz-box-sizing: border-box;
@@ -162,35 +145,30 @@ li {
 
 /* line 37, ../sass/screen.scss */
 a {
+  transition: color 0.2s ease;
   text-decoration: none;
 }
 
-/* line 40, ../sass/screen.scss */
-h1, h2, h3, h4, h5, h6 {
-  font-family: arial, sans-serif;
-  font-weight: bold;
-}
-
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 h1 {
   font-size: 3em;
   line-height: 1.1em;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 h2 {
-  font-size: 1.125em;
+  font-size: 1.25em;
   line-height: 1.1em;
+  margin: 0 0 0.25em 0;
 }
 
 /* -------------------------------------------------------------------------*/
-/* Layout */
-/* line 55, ../sass/screen.scss */
+/* line 57, ../sass/screen.scss */
 body {
   padding: 2em;
 }
 
-/* line 59, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 header {
   clear: both;
   padding: 0;
@@ -202,39 +180,63 @@ header:after {
   clear: both;
   height: 0;
 }
-/* line 62, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 header h1 {
   text-align: center;
   padding: 0 0 0.75em 0;
 }
-/* line 66, ../sass/screen.scss */
+/* line 68, ../sass/screen.scss */
 header select {
-  margin: 0 auto 2em auto;
+  margin: 0 auto 2.5em auto;
   font-size: 0.9375em;
   display: block;
+  border: 1px solid #4d8da9;
+  color: #4d8da9;
 }
 
-/* line 73, ../sass/screen.scss */
+/* line 77, ../sass/screen.scss */
 #featured-kitten {
   margin: 0 auto 2em auto;
 }
-/* line 75, ../sass/screen.scss */
+/* line 79, ../sass/screen.scss */
 #featured-kitten div {
   padding-top: 1em;
 }
+/* line 82, ../sass/screen.scss */
+#featured-kitten a {
+  font-weight: bold;
+}
 
-/* line 80, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 .kitten-mug {
   padding-bottom: 2em;
 }
-/* line 82, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 .kitten-mug a {
   display: block;
   text-align: right;
 }
 
+/* line 100, ../sass/screen.scss */
+.cta, #featured-kitten a, .kitten-mug a {
+  position: relative;
+  padding-right: 0.625em;
+  color: #4d8da9;
+}
+/* line 16, ../sass/_mixins.scss */
+.cta:after, #featured-kitten a:after, .kitten-mug a:after {
+  font-size: 0.7em;
+  position: absolute;
+  right: 0;
+  content: ">";
+}
+/* line 27, ../sass/_mixins.scss */
+.cta:hover, #featured-kitten a:hover, .kitten-mug a:hover, .cta:focus, #featured-kitten a:focus, .kitten-mug a:focus {
+  color: #6da4bc;
+}
+
 @media screen and (min-width: 650px) {
-  /* line 89, ../sass/screen.scss */
+  /* line 105, ../sass/screen.scss */
   #main-content {
     clear: both;
   }
@@ -246,31 +248,31 @@ header select {
     height: 0;
   }
 
-  /* line 92, ../sass/screen.scss */
+  /* line 108, ../sass/screen.scss */
   .kitten-mug {
     width: 50%;
     float: left;
     padding: 0 1em 2em 1em;
   }
 
-  /* line 97, ../sass/screen.scss */
+  /* line 113, ../sass/screen.scss */
   .kitten-mug:nth-of-type(odd) {
     padding-left: 0;
   }
 
-  /* line 100, ../sass/screen.scss */
+  /* line 116, ../sass/screen.scss */
   .kitten-mug:nth-of-type(even) {
     padding-right: 0;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 106, ../sass/screen.scss */
+  /* line 122, ../sass/screen.scss */
   body {
     max-width: 75em;
     margin: 0 auto;
   }
 
-  /* line 110, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   #featured-kitten {
     clear: both;
     padding: 0;
@@ -282,13 +284,13 @@ header select {
     clear: both;
     height: 0;
   }
-  /* line 113, ../sass/screen.scss */
+  /* line 129, ../sass/screen.scss */
   #featured-kitten img {
     float: left;
     width: 50%;
     padding-right: 1em;
   }
-  /* line 118, ../sass/screen.scss */
+  /* line 134, ../sass/screen.scss */
   #featured-kitten div {
     float: left;
     width: 50%;

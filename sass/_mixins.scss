@@ -8,61 +8,23 @@
 	}
 }
 
-/*
-@mixin white_cta_arrow {
+@mixin cta_arrow($direction:"right", $size:"1em") {
+	//@debug $direction;//outputs any errors in terminal (where compass is watching)
 	position: relative;
-	padding-right: 20px;
+	padding-#{$direction}: px-to-em(10px);
+	color: $ctaLink;
 	&:after {
+		font-size: $size;
 		position: absolute;
-		top: 50%;
-		right: px-to-em(5px);
-		margin-top: -11px;
-		content: "";
-		height: 22px;
-		width: 22px;
-		background: #000 url(../img/main-sprite.png) no-repeat -0px -650px;
-	}
-}
+		#{$direction}: 0;
 
-@mixin video_link {
-	position: relative;
-	padding-left: 20px;
-	&:before {
-		position: absolute;
-		top: 0;
-		left: 0;
-		content: "";
-		height: 15px;
-		width: 16px;
-		background: url(../img/main-sprite.png) no-repeat -48px -616px;
+		@if $direction == "right" {
+			content: ">";
+		} @else if $direction == "left" {
+			content: "<";
+		}
+	}
+	&:hover, &:focus {
+		color: $ctaLink_hover;
 	}
 }
-
-@mixin yellow_cta_arrow {
-	position: relative;
-	padding-right: 20px;
-	&:after {
-		position: absolute;
-		bottom: 0;
-		right: px-to-em(5px);
-		content: "";
-		height: 18px;
-		width: 13px;
-		background: url(../img/main-sprite.png) no-repeat -294px -643px;
-	}
-}
-
-@mixin yellow_cta_arrow_before {
-	position: relative;
-	padding-left: 20px;
-	&:after {
-		position: absolute;
-		bottom: 0;
-		left: px-to-em(5px);
-		content: "";
-		height: 18px;
-		width: 13px;
-		background: url(../img/main-sprite.png) no-repeat -294px -661px;
-	}
-}
-*/

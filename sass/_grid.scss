@@ -1,14 +1,12 @@
-// ---------------------------------------------------------------------------
-// Imports
+//@reference http://12devs.co.uk/articles/handy-advanced-sass/
 
-@import "susy";
+/* -------------------------------------------------------------------------*/
+// Responsive Grid Example
 
-// ---------------------------------------------------------------------------
-// Basic Grid
+$columns: 2;
 
-$total-columns  : 12;
-$column-width   : 6em;
-$gutter-width   : 1em;
-$grid-padding   : $gutter-width;
-
-$show-grid-backgrounds  : true;
+@for $i from 1 through $columns {
+	.cols-#{$i}{
+		width: ((100/$columns) * $i) * 1%;
+	}
+}
