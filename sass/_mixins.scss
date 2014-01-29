@@ -28,3 +28,19 @@
 		color: $ctaLink_hover;
 	}
 }
+
+@mixin taperIndent($indention) {
+	/*
+	//@for example
+	@for $i from 1 to 10 {
+		li:nth-child(#{$i}) {
+			margin-left: #{($i - 1) * $indention}; 
+		}
+	}
+	*/
+
+	//@each example
+	@each $item in $items {
+		
+	}
+}

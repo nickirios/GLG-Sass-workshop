@@ -11,11 +11,34 @@
 <body class="default">
 	<header>
 		<h1>Kitten Adoption</h1>
-		<select>
-			<option value="default">default</option>
-			<option value="tmo">TMO</option>
-			<option value="modern">modern</option>
-		</select>
+		<nav>
+			<!-- (@for, @each, @while, operators) -->
+			<ul>
+				<li>
+					<a href="#">Level 1</a>
+					<ul>
+						<li><a href="">Level 2</a></li>
+						<li>
+							<a href="">Level 2</a>
+							<ul>
+								<li><a href="">Level 3</a></li>
+								<li><a href="">Level 3</a></li>
+							</ul>
+						</li>
+						<li><a href="">Level 2</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Level 1</a></li>
+				<li><a href="#">Level 1</a></li>
+				<li><a href="#">Level 1</a></li>
+				<li><a href="#">Level 1</a></li>
+			</ul>
+			<select>
+				<option value="default">default</option>
+				<option value="tmo">TMO</option>
+				<option value="modern">modern</option>
+			</select>
+		</nav>
 	</header>
 	<section id="featured-kitten">
 		<img src="img/1000.jpg" />
@@ -25,7 +48,7 @@
 			<a href="#">See details</a>
 		</div>
 	</section>
-	<article id="main-content">
+	<section id="main-content">
 		<div class="kitten-mug">
 			<img src="img/300.jpg" />
 			<a href="#">See details</a>
@@ -54,16 +77,9 @@
 			<img src="img/900.jpg" />
 			<a href="#">See details</a>
 		</div>
-	</article>
+	</section>
 	<footer>
-		<!-- footer icons here (@for, @each, @while) -->
-		<ul>
-			<li><a href="#">Adoption Center</a></li>
-			<li><a href="#">Facebook</a></li>
-			<li><a href="#">Twitter</a></li>
-			<li><a href="#">Github Octocats</a></li>
-			<li><a href="#">LinkedIn</a></li>
-		</ul>
+		<small>&copy; info here</small>
 	</footer>
 </body>
 </html>

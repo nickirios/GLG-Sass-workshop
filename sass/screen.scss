@@ -18,7 +18,6 @@
 	box-sizing: border-box;
 }
 body, html {
-	height: 100%;
 	min-width: 300px;
 	font-size: 1em; //base font-size
 	line-height: 1.3em; //base line-height
@@ -50,6 +49,10 @@ h2 {
 	line-height: 1.1em;
 	margin: 0 0 px-to-em(4px) 0;
 }
+select {//applies to all selects
+	border: 1px solid $select_borderColor;
+	color: $select_color;
+}
 
 /* -------------------------------------------------------------------------*/
 // Layout
@@ -57,23 +60,28 @@ h2 {
 body {
 	padding: 2em;
 }
-
 header {
 	@include clearfix;
-	padding: 0;
+	padding: 0 0 2em 0;
 	h1 {
 		text-align: center;
-		padding: 0 0 0.75em 0;
 	}
-	select {
-		margin: 0 auto 2.5em auto;
+	nav {
+		padding: 1em 0 0 0;
+	}
+	li {
+		margin-bottom: 1px;
+		a {
+			display: inline-block;
+			padding: 0.25em 0;
+		}
+	}
+	select {//applies only to the header select
+		margin: 1em auto;
 		font-size: px-to-em(15px);
 		display: block;
-		border: 1px solid $select_borderColor;
-		color: $select_color;
 	}
 }
-
 #featured-kitten {
 	margin: 0 auto 2em auto;
 	div {
@@ -84,7 +92,6 @@ header {
 		font-weight: bold;
 	}
 }
-
 .kitten-mug {
 	padding-bottom: 2em;
 	img {
@@ -96,9 +103,14 @@ header {
 		@extend .cta;
 	}
 }
-
 .cta {
 	@include cta_arrow(right, 0.7em);
+}
+footer {
+	text-align: center;
+	small {
+
+	}
 }
 
 @media screen and (min-width: 650px) {
