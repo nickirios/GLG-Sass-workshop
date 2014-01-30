@@ -44,3 +44,13 @@
 		}
 	}
 }
+
+@mixin navDepth($depth:6){
+	@while $depth > 0 {
+		.level-#{$depth} {
+			width: 2em * $depth;
+			background-color: lighten(blue,$depth+0%);
+		}
+		$depth: $depth - 1;
+	}
+}

@@ -65,17 +65,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* -------------------------------------------------------------------------*/
-/* line 9, ../sass/_grid.scss */
-.cols-1 {
-  width: 50%;
-}
-
-/* line 9, ../sass/_grid.scss */
-.cols-2 {
-  width: 100%;
-}
-
-/* -------------------------------------------------------------------------*/
 /* Descriptive
  * @purpose define the colors
  * @naming_convention generalColor_tintOrShade
@@ -111,14 +100,14 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 /* -------------------------------------------------------------------------*/
-/* line 15, ../sass/screen.scss */
+/* line 16, ../sass/screen.scss */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 21, ../sass/screen.scss */
 body, html {
   min-width: 300px;
   font-size: 1em;
@@ -126,59 +115,59 @@ body, html {
   font-family: arial, sans-serif;
 }
 
-/* line 26, ../sass/screen.scss */
+/* line 27, ../sass/screen.scss */
 img, embed, video, object, iframe {
   max-width: 100%;
 }
 
-/* line 29, ../sass/screen.scss */
+/* line 30, ../sass/screen.scss */
 p {
   margin: 0 0 0.5em 0;
   font-size: 0.9em;
 }
 
-/* line 33, ../sass/screen.scss */
+/* line 34, ../sass/screen.scss */
 li {
   font-size: 0.9em;
 }
 
-/* line 36, ../sass/screen.scss */
+/* line 37, ../sass/screen.scss */
 a {
   transition: color 0.2s ease;
   text-decoration: none;
 }
 
-/* line 40, ../sass/screen.scss */
+/* line 41, ../sass/screen.scss */
 h1, h2, h3, h4, h5, h6 {
   font-family: helvetica, arial, sans-serif;
 }
 
-/* line 43, ../sass/screen.scss */
+/* line 44, ../sass/screen.scss */
 h1 {
   font-size: 3em;
   line-height: 1.1em;
 }
 
-/* line 47, ../sass/screen.scss */
+/* line 48, ../sass/screen.scss */
 h2 {
   font-size: 1.25em;
   line-height: 1.1em;
   margin: 0 0 0.25em 0;
 }
 
-/* line 52, ../sass/screen.scss */
+/* line 53, ../sass/screen.scss */
 select {
   border: 1px solid #4d8da9;
   color: #4d8da9;
 }
 
 /* -------------------------------------------------------------------------*/
-/* line 60, ../sass/screen.scss */
+/* line 61, ../sass/screen.scss */
 body {
   padding: 2em;
 }
 
-/* line 63, ../sass/screen.scss */
+/* line 64, ../sass/screen.scss */
 header {
   clear: both;
   padding: 0 0 2em 0;
@@ -190,58 +179,84 @@ header:after {
   clear: both;
   height: 0;
 }
-/* line 66, ../sass/screen.scss */
+/* line 67, ../sass/screen.scss */
 header h1 {
   text-align: center;
 }
-/* line 69, ../sass/screen.scss */
+/* line 70, ../sass/screen.scss */
 header nav {
   padding: 1em 0 0 0;
 }
-/* line 72, ../sass/screen.scss */
+/* line 50, ../sass/_mixins.scss */
+header nav .level-6 {
+  width: 12em;
+  background-color: #1f1fff;
+}
+/* line 50, ../sass/_mixins.scss */
+header nav .level-5 {
+  width: 10em;
+  background-color: #1a1aff;
+}
+/* line 50, ../sass/_mixins.scss */
+header nav .level-4 {
+  width: 8em;
+  background-color: #1414ff;
+}
+/* line 50, ../sass/_mixins.scss */
+header nav .level-3 {
+  width: 6em;
+  background-color: #0f0fff;
+}
+/* line 50, ../sass/_mixins.scss */
+header nav .level-2 {
+  width: 4em;
+  background-color: #0a0aff;
+}
+/* line 50, ../sass/_mixins.scss */
+header nav .level-1 {
+  width: 2em;
+  background-color: #0505ff;
+}
+/* line 74, ../sass/screen.scss */
 header li {
   margin-bottom: 1px;
 }
-/* line 74, ../sass/screen.scss */
+/* line 76, ../sass/screen.scss */
 header li a {
   display: inline-block;
   padding: 0.25em 0;
 }
-/* line 78, ../sass/screen.scss */
-header li li {
-  padding-left: 20px;
-}
-/* line 82, ../sass/screen.scss */
+/* line 81, ../sass/screen.scss */
 header select {
   margin: 1em auto;
   font-size: 0.9375em;
   display: block;
 }
 
-/* line 88, ../sass/screen.scss */
+/* line 87, ../sass/screen.scss */
 #featured-kitten {
   margin: 0 auto 2em auto;
 }
-/* line 90, ../sass/screen.scss */
+/* line 89, ../sass/screen.scss */
 #featured-kitten div {
   padding-top: 1em;
 }
-/* line 93, ../sass/screen.scss */
+/* line 92, ../sass/screen.scss */
 #featured-kitten a {
   font-weight: bold;
 }
 
-/* line 98, ../sass/screen.scss */
+/* line 97, ../sass/screen.scss */
 .kitten-mug {
   padding-bottom: 2em;
 }
-/* line 103, ../sass/screen.scss */
+/* line 102, ../sass/screen.scss */
 .kitten-mug a {
   display: block;
   text-align: right;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 108, ../sass/screen.scss */
 .cta, #featured-kitten a, .kitten-mug a {
   position: relative;
   padding-right: 0.625em;
@@ -259,15 +274,15 @@ header select {
   color: #6da4bc;
 }
 
-/* line 112, ../sass/screen.scss */
+/* line 111, ../sass/screen.scss */
 footer {
   text-align: center;
 }
-/* line 114, ../sass/screen.scss */
+/* line 113, ../sass/screen.scss */
 footer small {
   font-size: 0.75em;
 }
-/* line 117, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 footer ul {
   margin-top: 1em;
 }
@@ -333,7 +348,7 @@ footer ul {
 }
 
 @media screen and (min-width: 650px) {
-  /* line 124, ../sass/screen.scss */
+  /* line 123, ../sass/screen.scss */
   #main-content {
     clear: both;
   }
@@ -345,31 +360,31 @@ footer ul {
     height: 0;
   }
 
-  /* line 127, ../sass/screen.scss */
+  /* line 126, ../sass/screen.scss */
   .kitten-mug {
     width: 50%;
     float: left;
     padding: 0 1em 2em 1em;
   }
 
-  /* line 132, ../sass/screen.scss */
+  /* line 131, ../sass/screen.scss */
   .kitten-mug:nth-of-type(odd) {
     padding-left: 0;
   }
 
-  /* line 135, ../sass/screen.scss */
+  /* line 134, ../sass/screen.scss */
   .kitten-mug:nth-of-type(even) {
     padding-right: 0;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 141, ../sass/screen.scss */
+  /* line 140, ../sass/screen.scss */
   body {
     max-width: 75em;
     margin: 0 auto;
   }
 
-  /* line 145, ../sass/screen.scss */
+  /* line 144, ../sass/screen.scss */
   #featured-kitten {
     clear: both;
     padding: 0;
@@ -381,13 +396,13 @@ footer ul {
     clear: both;
     height: 0;
   }
-  /* line 148, ../sass/screen.scss */
+  /* line 147, ../sass/screen.scss */
   #featured-kitten img {
     float: left;
     width: 50%;
     padding-right: 1em;
   }
-  /* line 153, ../sass/screen.scss */
+  /* line 152, ../sass/screen.scss */
   #featured-kitten div {
     float: left;
     width: 50%;

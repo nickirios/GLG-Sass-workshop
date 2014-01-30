@@ -2,7 +2,8 @@
 // Imports
 
 @import "compass/reset";
-@import "grid";
+//@import "grid_susy";
+//@import "grid";
 @import "colors";
 @import "functions";
 @import "mixins";
@@ -68,15 +69,13 @@ header {
 	}
 	nav {
 		padding: 1em 0 0 0;
+		@include navDepth(6);
 	}
 	li {
 		margin-bottom: 1px;
 		a {
 			display: inline-block;
 			padding: 0.25em 0;
-		}
-		li {
-			padding-left: 20px;
 		}
 	}
 	select {//applies only to the header select
