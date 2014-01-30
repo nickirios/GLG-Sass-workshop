@@ -29,18 +29,18 @@
 	}
 }
 
-@mixin taperIndent($indention) {
-	/*
-	//@for example
-	@for $i from 1 to 10 {
-		li:nth-child(#{$i}) {
-			margin-left: #{($i - 1) * $indention}; 
-		}
-	}
-	*/
+@mixin icons {
+	//sass idea from http://12devs.co.uk/articles/handy-advanced-sass/
+	$icons: blue red yellow orange purple black;
 
-	//@each example
-	@each $item in $items {
-		
+	@each $icon in $icons {
+		.#{$icon}-cat {
+			height: 50px;
+			width: 50px;
+			background-image: url('../img/#{$icon}-cat.gif');//img from http://www.snap2objects.com/2009/01/11-cat-vector-silhouettes/
+			text-indent: -999999px;
+			display: inline-block;
+			margin: 5px;
+		}
 	}
 }

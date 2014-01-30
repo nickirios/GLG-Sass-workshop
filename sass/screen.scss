@@ -21,7 +21,7 @@ body, html {
 	min-width: 300px;
 	font-size: 1em; //base font-size
 	line-height: 1.3em; //base line-height
-	font-family: helvetica, arial, sans-serif;
+	@include regularFont;
 }
 img, embed, video, object, iframe {
 	max-width: 100%;
@@ -38,7 +38,7 @@ a {
 	text-decoration: none;
 }
 h1, h2, h3, h4, h5, h6 {
-	//@include boldFont;
+	@include boldFont;
 }
 h1 {
 	font-size: px-to-em(48px);
@@ -75,6 +75,9 @@ header {
 			display: inline-block;
 			padding: 0.25em 0;
 		}
+		li {
+			padding-left: 20px;
+		}
 	}
 	select {//applies only to the header select
 		margin: 1em auto;
@@ -109,9 +112,13 @@ header {
 footer {
 	text-align: center;
 	small {
-
+		font-size: px-to-em(12px);
+	}
+	ul {
+		margin-top: 1em;
 	}
 }
+@include icons;
 
 @media screen and (min-width: 650px) {
 	#main-content {

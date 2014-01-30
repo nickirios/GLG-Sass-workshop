@@ -123,7 +123,7 @@ body, html {
   min-width: 300px;
   font-size: 1em;
   line-height: 1.3em;
-  font-family: helvetica, arial, sans-serif;
+  font-family: arial, sans-serif;
 }
 
 /* line 26, ../sass/screen.scss */
@@ -146,6 +146,11 @@ li {
 a {
   transition: color 0.2s ease;
   text-decoration: none;
+}
+
+/* line 40, ../sass/screen.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-family: helvetica, arial, sans-serif;
 }
 
 /* line 43, ../sass/screen.scss */
@@ -202,37 +207,41 @@ header li a {
   display: inline-block;
   padding: 0.25em 0;
 }
-/* line 79, ../sass/screen.scss */
+/* line 78, ../sass/screen.scss */
+header li li {
+  padding-left: 20px;
+}
+/* line 82, ../sass/screen.scss */
 header select {
   margin: 1em auto;
   font-size: 0.9375em;
   display: block;
 }
 
-/* line 85, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 #featured-kitten {
   margin: 0 auto 2em auto;
 }
-/* line 87, ../sass/screen.scss */
+/* line 90, ../sass/screen.scss */
 #featured-kitten div {
   padding-top: 1em;
 }
-/* line 90, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #featured-kitten a {
   font-weight: bold;
 }
 
-/* line 95, ../sass/screen.scss */
+/* line 98, ../sass/screen.scss */
 .kitten-mug {
   padding-bottom: 2em;
 }
-/* line 100, ../sass/screen.scss */
+/* line 103, ../sass/screen.scss */
 .kitten-mug a {
   display: block;
   text-align: right;
 }
 
-/* line 106, ../sass/screen.scss */
+/* line 109, ../sass/screen.scss */
 .cta, #featured-kitten a, .kitten-mug a {
   position: relative;
   padding-right: 0.625em;
@@ -250,13 +259,81 @@ header select {
   color: #6da4bc;
 }
 
-/* line 109, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 footer {
   text-align: center;
 }
+/* line 114, ../sass/screen.scss */
+footer small {
+  font-size: 0.75em;
+}
+/* line 117, ../sass/screen.scss */
+footer ul {
+  margin-top: 1em;
+}
+
+/* line 37, ../sass/_mixins.scss */
+.blue-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/blue-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 37, ../sass/_mixins.scss */
+.red-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/red-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 37, ../sass/_mixins.scss */
+.yellow-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/yellow-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 37, ../sass/_mixins.scss */
+.orange-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/orange-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 37, ../sass/_mixins.scss */
+.purple-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/purple-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
+
+/* line 37, ../sass/_mixins.scss */
+.black-cat {
+  height: 50px;
+  width: 50px;
+  background-image: url("../img/black-cat.gif");
+  text-indent: -999999px;
+  display: inline-block;
+  margin: 5px;
+}
 
 @media screen and (min-width: 650px) {
-  /* line 117, ../sass/screen.scss */
+  /* line 124, ../sass/screen.scss */
   #main-content {
     clear: both;
   }
@@ -268,31 +345,31 @@ footer {
     height: 0;
   }
 
-  /* line 120, ../sass/screen.scss */
+  /* line 127, ../sass/screen.scss */
   .kitten-mug {
     width: 50%;
     float: left;
     padding: 0 1em 2em 1em;
   }
 
-  /* line 125, ../sass/screen.scss */
+  /* line 132, ../sass/screen.scss */
   .kitten-mug:nth-of-type(odd) {
     padding-left: 0;
   }
 
-  /* line 128, ../sass/screen.scss */
+  /* line 135, ../sass/screen.scss */
   .kitten-mug:nth-of-type(even) {
     padding-right: 0;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 134, ../sass/screen.scss */
+  /* line 141, ../sass/screen.scss */
   body {
     max-width: 75em;
     margin: 0 auto;
   }
 
-  /* line 138, ../sass/screen.scss */
+  /* line 145, ../sass/screen.scss */
   #featured-kitten {
     clear: both;
     padding: 0;
@@ -304,13 +381,13 @@ footer {
     clear: both;
     height: 0;
   }
-  /* line 141, ../sass/screen.scss */
+  /* line 148, ../sass/screen.scss */
   #featured-kitten img {
     float: left;
     width: 50%;
     padding-right: 1em;
   }
-  /* line 146, ../sass/screen.scss */
+  /* line 153, ../sass/screen.scss */
   #featured-kitten div {
     float: left;
     width: 50%;
