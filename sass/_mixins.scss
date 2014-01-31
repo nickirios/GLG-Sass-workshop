@@ -45,14 +45,3 @@
 		}
 	}
 }
-
-@mixin navDepth($depth:6){
-	@while $depth > 0 {
-		.level-#{$depth} {
-			//width: 6em * $depth;
-			$percentage: ($depth * 3)+0%;
-			background-color: darken($navLinks_bkgdColor,$percentage);
-		}
-		$depth: $depth - 1;
-	}
-}
