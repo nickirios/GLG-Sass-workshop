@@ -31,7 +31,7 @@ p {
 	margin:0 0 px-to-em(8px) 0;
 	font-size: 0.9em;
 }
-li {
+> li {//to prevent decrease when nested
 	font-size: 0.9em;
 }
 a {
@@ -72,10 +72,14 @@ header {
 		@include navDepth(6);
 	}
 	li {
-		margin-bottom: 1px;
+		padding: 0 0.5em;
 		a {
 			display: inline-block;
-			padding: 0.25em 0;
+			padding: 0.5em 0;
+			color: $navLinks_color;
+			&:hover, &:focus {
+				color: $navLinks_color_hover;
+			}
 		}
 	}
 	select {//applies only to the header select

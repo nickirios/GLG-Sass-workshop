@@ -74,9 +74,9 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
  * @purpose where colors will be used
  * @naming_convention contentType_purpose_specify
  */
+/* General */
 /* Buttons & CTAs */
 /* Nav */
-/* Content Blocks */
 /* line 2, ../sass/themes/_default.scss */
 .default .kitten-mug img, .kitten-mug .default img {
   box-shadow: -1px 2px 5px 1px rgba(0, 0, 0, 0.6);
@@ -127,7 +127,7 @@ p {
 }
 
 /* line 34, ../sass/screen.scss */
-li {
+> li {
   font-size: 0.9em;
 }
 
@@ -187,107 +187,106 @@ header h1 {
 header nav {
   padding: 1em 0 0 0;
 }
-/* line 50, ../sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 header nav .level-6 {
-  width: 12em;
-  background-color: #1f1fff;
+  background-color: #74a8bf;
 }
-/* line 50, ../sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 header nav .level-5 {
-  width: 10em;
-  background-color: #1a1aff;
+  background-color: #7eafc4;
 }
-/* line 50, ../sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 header nav .level-4 {
-  width: 8em;
-  background-color: #1414ff;
+  background-color: #89b5c9;
 }
-/* line 50, ../sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 header nav .level-3 {
-  width: 6em;
-  background-color: #0f0fff;
+  background-color: #93bcce;
 }
-/* line 50, ../sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 header nav .level-2 {
-  width: 4em;
-  background-color: #0a0aff;
+  background-color: #9ec3d2;
 }
-/* line 50, ../sass/_mixins.scss */
+/* line 51, ../sass/_mixins.scss */
 header nav .level-1 {
-  width: 2em;
-  background-color: #0505ff;
+  background-color: #a8c9d7;
 }
 /* line 74, ../sass/screen.scss */
 header li {
-  margin-bottom: 1px;
+  padding: 0 0.5em;
 }
 /* line 76, ../sass/screen.scss */
 header li a {
   display: inline-block;
-  padding: 0.25em 0;
+  padding: 0.5em 0;
+  color: black;
 }
-/* line 81, ../sass/screen.scss */
+/* line 80, ../sass/screen.scss */
+header li a:hover, header li a:focus {
+  color: #e6e6e6;
+}
+/* line 85, ../sass/screen.scss */
 header select {
   margin: 1em auto;
   font-size: 0.9375em;
   display: block;
 }
 
-/* line 87, ../sass/screen.scss */
+/* line 91, ../sass/screen.scss */
 #featured-kitten {
   margin: 0 auto 2em auto;
 }
-/* line 89, ../sass/screen.scss */
+/* line 93, ../sass/screen.scss */
 #featured-kitten div {
   padding-top: 1em;
 }
-/* line 92, ../sass/screen.scss */
+/* line 96, ../sass/screen.scss */
 #featured-kitten a {
   font-weight: bold;
 }
 
-/* line 97, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .kitten-mug {
   padding-bottom: 2em;
 }
-/* line 102, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .kitten-mug a {
   display: block;
   text-align: right;
 }
 
-/* line 108, ../sass/screen.scss */
+/* line 112, ../sass/screen.scss */
 .cta, #featured-kitten a, .kitten-mug a {
   position: relative;
   padding-right: 0.625em;
   color: #4d8da9;
 }
-/* line 16, ../sass/_mixins.scss */
+/* line 17, ../sass/_mixins.scss */
 .cta:after, #featured-kitten a:after, .kitten-mug a:after {
   font-size: 0.7em;
   position: absolute;
   right: 0;
   content: ">";
 }
-/* line 27, ../sass/_mixins.scss */
+/* line 28, ../sass/_mixins.scss */
 .cta:hover, #featured-kitten a:hover, .kitten-mug a:hover, .cta:focus, #featured-kitten a:focus, .kitten-mug a:focus {
   color: #6da4bc;
 }
 
-/* line 111, ../sass/screen.scss */
+/* line 115, ../sass/screen.scss */
 footer {
   text-align: center;
 }
-/* line 113, ../sass/screen.scss */
+/* line 117, ../sass/screen.scss */
 footer small {
   font-size: 0.75em;
 }
-/* line 116, ../sass/screen.scss */
+/* line 120, ../sass/screen.scss */
 footer ul {
   margin-top: 1em;
 }
 
-/* line 37, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .blue-cat {
   height: 50px;
   width: 50px;
@@ -297,7 +296,7 @@ footer ul {
   margin: 5px;
 }
 
-/* line 37, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .red-cat {
   height: 50px;
   width: 50px;
@@ -307,7 +306,7 @@ footer ul {
   margin: 5px;
 }
 
-/* line 37, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .yellow-cat {
   height: 50px;
   width: 50px;
@@ -317,7 +316,7 @@ footer ul {
   margin: 5px;
 }
 
-/* line 37, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .orange-cat {
   height: 50px;
   width: 50px;
@@ -327,7 +326,7 @@ footer ul {
   margin: 5px;
 }
 
-/* line 37, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .purple-cat {
   height: 50px;
   width: 50px;
@@ -337,7 +336,7 @@ footer ul {
   margin: 5px;
 }
 
-/* line 37, ../sass/_mixins.scss */
+/* line 38, ../sass/_mixins.scss */
 .black-cat {
   height: 50px;
   width: 50px;
@@ -348,7 +347,7 @@ footer ul {
 }
 
 @media screen and (min-width: 650px) {
-  /* line 123, ../sass/screen.scss */
+  /* line 127, ../sass/screen.scss */
   #main-content {
     clear: both;
   }
@@ -360,31 +359,31 @@ footer ul {
     height: 0;
   }
 
-  /* line 126, ../sass/screen.scss */
+  /* line 130, ../sass/screen.scss */
   .kitten-mug {
     width: 50%;
     float: left;
     padding: 0 1em 2em 1em;
   }
 
-  /* line 131, ../sass/screen.scss */
+  /* line 135, ../sass/screen.scss */
   .kitten-mug:nth-of-type(odd) {
     padding-left: 0;
   }
 
-  /* line 134, ../sass/screen.scss */
+  /* line 138, ../sass/screen.scss */
   .kitten-mug:nth-of-type(even) {
     padding-right: 0;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 140, ../sass/screen.scss */
+  /* line 144, ../sass/screen.scss */
   body {
     max-width: 75em;
     margin: 0 auto;
   }
 
-  /* line 144, ../sass/screen.scss */
+  /* line 148, ../sass/screen.scss */
   #featured-kitten {
     clear: both;
     padding: 0;
@@ -396,13 +395,13 @@ footer ul {
     clear: both;
     height: 0;
   }
-  /* line 147, ../sass/screen.scss */
+  /* line 151, ../sass/screen.scss */
   #featured-kitten img {
     float: left;
     width: 50%;
     padding-right: 1em;
   }
-  /* line 152, ../sass/screen.scss */
+  /* line 156, ../sass/screen.scss */
   #featured-kitten div {
     float: left;
     width: 50%;

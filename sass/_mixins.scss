@@ -10,6 +10,7 @@
 
 @mixin cta_arrow($direction:"right", $size:"1em") {
 	//@debug $direction;//outputs any errors in terminal (where compass is watching)
+	
 	position: relative;
 	padding-#{$direction}: px-to-em(10px);
 	color: $ctaLink;
@@ -48,8 +49,9 @@
 @mixin navDepth($depth:6){
 	@while $depth > 0 {
 		.level-#{$depth} {
-			width: 2em * $depth;
-			background-color: lighten(blue,$depth+0%);
+			//width: 6em * $depth;
+			$percentage: ($depth * 3)+0%;
+			background-color: darken($navLinks_bkgdColor,$percentage);
 		}
 		$depth: $depth - 1;
 	}

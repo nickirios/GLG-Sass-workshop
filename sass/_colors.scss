@@ -17,8 +17,8 @@ $blue_dark: darken($blue,10%);
  * @naming_convention contentType_purpose_specify
  */
 
+/* General */
 $bodyFonts: $black;
-$navLinks_bkgdColor: $blue;
 $select_color: $blue_dark;
 $select_borderColor: $blue_dark;
 
@@ -27,5 +27,6 @@ $ctaLink: $blue_dark !default;
 $ctaLink_hover: $blue;
 
 /* Nav */
-
-/* Content Blocks */
+$navLinks_bkgdColor: lighten($blue,20%);
+$navLinks_color: $black;
+$navLinks_color_hover: lighten($navLinks_color,90%);
