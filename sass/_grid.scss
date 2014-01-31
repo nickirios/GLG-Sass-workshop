@@ -3,7 +3,6 @@
 /* -------------------------------------------------------------------------*/
 // Responsive Grid Example
 
-/* 8 - keep in code */
 $columns: 2;
 
 @for $i from 1 through $columns {
@@ -11,4 +10,3 @@ $columns: 2;
 		width: ((100/$columns) * $i) * 1%;
 	}
 }
-/**/
