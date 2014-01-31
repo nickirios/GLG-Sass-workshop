@@ -61,6 +61,5 @@
 			$percentage: ($depth * 3)+0%;
 			background-color: darken($navLinks_bkgdColor,$percentage);
 		}
-		$depth: $depth - 1;
 	}
 }
