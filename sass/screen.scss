@@ -4,9 +4,8 @@
 @import "compass/reset";
 //@import "grid_susy";
 //@import "grid";
-@import "colors";
-@import "functions";
-@import "mixins";
+@import "vars";
+@import "tools";
 @import "typography";
 @import "themes/themes";
 
@@ -69,6 +68,7 @@ header {
 	}
 	nav {
 		padding: 1em 0 0 0;
+		@include navDepth(6);
 	}
 	li {
 		padding: 0 0.5em;

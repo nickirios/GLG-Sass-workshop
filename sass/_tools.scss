@@ -1,3 +1,11 @@
+@function px-to-em($px, $base:16px){
+  @return ($px / $base) * 1em;
+}
+
+@function nested-em($parentEM, $childEM){
+	@return $childEM/$parentEM+em;
+}
+
 @mixin clearfix {
 	clear: both;
 	&:after {
@@ -43,5 +51,16 @@
 			display: inline-block;
 			margin: 5px;
 		}
+	}
+}
+
+@mixin navDepth($depth:6){
+	@while $depth > 0 {
+		.level-#{$depth} {
+			//width: 6em * $depth;
+			$percentage: ($depth * 3)+0%;
+			background-color: darken($navLinks_bkgdColor,$percentage);
+		}
+		$depth: $depth - 1;
 	}
 }

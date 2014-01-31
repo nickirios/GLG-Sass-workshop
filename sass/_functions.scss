@@ -1,7 +1,0 @@
-@function px-to-em($px, $base:16px){
-  @return ($px / $base) * 1em;
-}
-
-@function nested-em($parentEM, $childEM){
-	@return $childEM/$parentEM+em;
-}
