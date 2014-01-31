@@ -120,7 +120,7 @@ footer {
 		margin-top: 1em;
 	}
 }
-@include icons;
+@include footer_icons;
 
 @media screen and (min-width: 650px) {
 	#main-content {
