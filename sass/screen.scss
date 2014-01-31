@@ -93,7 +93,7 @@ header {
 		padding-top: 1em;
 	}
 	a {
-		@extend .cta;
+		@include cta_arrow(right, 0.7em);
 		font-weight: bold;
 	}
 }
@@ -105,11 +105,26 @@ header {
 	a {
 		display: block;
 		text-align: right;
-		@extend .cta;
+		@include cta_arrow(right, 0.7em);
 	}
 }
-.cta {
-	@include cta_arrow(right, 0.7em);
+.sched-for-term {
+	position: relative;
+	&:after {
+		content: "help me!";
+		position: absolute;
+		top: 0;
+		right: 0;
+		background-color: $helpFlag_bkgdColor;
+		padding: 5px;
+	}
+}
+.new {
+	@extend .sched-for-term;
+	&:after {
+		content: "new";
+		background-color: $newFlag_bkgdColor;
+	}
 }
 footer {
 	text-align: center;
@@ -136,6 +151,11 @@ footer {
 	}
 	.kitten-mug:nth-of-type(even){
 		padding-right: 0;
+	}
+	.sched-for-term:nth-of-type(odd), .new:nth-of-type(odd) {
+		&:after {
+			right: 1em;
+		}
 	}
 }
 
