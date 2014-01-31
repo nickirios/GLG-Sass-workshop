@@ -1,3 +1,4 @@
+/* 5 - keep in code */
 @function px-to-em($px, $base:16px){
   @return ($px / $base) * 1em;
 }
@@ -6,6 +7,7 @@
 	@return $childEM/$parentEM+em;
 }
 
+/* 1 - keep in code */
 @mixin clearfix {
 	clear: both;
 	&:after {
@@ -15,7 +17,14 @@
 		height: 0;
 	}
 }
+/**/
 
+/* 1 - create partially w/just size argument (no default value specified) */
+/* 4 - give size argument default value */
+/* 6 - add direction argument, interpolate just the absolute right or left */
+/* 10 - add @if */
+/* 11 - add and test @debug */
+/* 12 - add and test @warn */
 @mixin cta_arrow($direction:"right", $size:"1em") {
 	//@debug $direction;//outputs any errors in terminal (where compass is watching)
 	
@@ -25,21 +34,24 @@
 	&:after {
 		font-size: $size;
 		position: absolute;
-		#{$direction}: 0;
+		#{$direction}: 0;/* 6 */
 
 		@if $direction == "right" {
 			content: ">";
 		} @else if $direction == "left" {
 			content: "<";
-		}
+		} /* @else if $direction == "up" {
+			@warn "Used up";
+		} */
 	}
 	&:hover, &:focus {
 		color: $ctaLink_hover;
 	}
 }
+/**/
 
-@mixin footer_icons {
-	//sass idea from http://12devs.co.uk/articles/handy-advanced-sass/
+/* 7 - write this out together, have them add and remove icons to experiment */
+@mixin footer_icons {//sass idea from http://12devs.co.uk/articles/handy-advanced-sass/
 	$icons: blue red yellow orange purple black;
 
 	@each $icon in $icons {
@@ -53,7 +65,9 @@
 		}
 	}
 }
+/**/
 
+/* 9 - build together */
 @mixin navDepth($depth:6){
 	@while $depth > 0 {
 		.level-#{$depth} {
@@ -61,5 +75,7 @@
 			$percentage: ($depth * 3)+0%;
 			background-color: darken($navLinks_bkgdColor,$percentage);
 		}
+		$depth: $depth - 1;
 	}
 }
+/**/
