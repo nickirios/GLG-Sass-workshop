@@ -71,29 +71,20 @@ This repo is meant to go along with a discussion (outlined below). The master br
 		* sets selectors and property names as variables
 	- @each
 		* lists
-		* show footer_icons mixin
-create a mixin that uses the cat gif imgs as icons in the footer
-markup is already there with class names
-steps:
-create and call the mixin
-add a list of all the colors
-add @each to add styles that get reused for each one
-use interpolation to switch out the class names based on the items in the list
-use interpolation to switch out the background image based on items in the list
-add remaining styles that need to be reused for all
-@for (step 8)
-http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/
-see _grid example
-see Josh’s example
-https://preview.glg.com/sty/default.html
-https://svn.glg.com:8443/svn/STY1_Microsite/branches/7514-stryker-marquee/sass/default.scss
-@while (step 9)
-http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_9
-see navDepth mixin
-@if (step 10)
-see cta_arrow mixin
-@media
-@debug (step 11)
-test in cta_arrow mixin
-@warn (step 12)
-test in cta_arrow mixin
+		* create a mixin that uses the cat gif imgs as icons in the footer (markup is already there with class names). Steps:
+			1. create and call the mixin
+			2. add a list of all the colors
+			3. add @each to add styles that get reused for each one
+			4. use interpolation to switch out the class names based on the items in the list
+			5. use interpolation to switch out the background image based on items in the list
+			6. add remaining styles that need to be reused for all
+	- @for
+		* http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/
+		* see _grid example
+		* see Josh’s example
+	- @while
+		* http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_9
+	- @if
+	- @media
+	- @debug
+	- @warn
