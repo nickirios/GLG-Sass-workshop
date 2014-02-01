@@ -81,7 +81,6 @@ This repo is meant to go along with a discussion (outlined below). The master br
 	- @for
 		* http://hugogiraudel.com/2013/08/08/advanced-sass-list-functions/
 		* see _grid example
-		* see Josh’s example
 	- @while
 		* http://sass-lang.com/documentation/file.SASS_REFERENCE.html#_9
 	- @if
