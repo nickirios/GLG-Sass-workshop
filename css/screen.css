@@ -332,7 +332,7 @@ header select {
 
 /* line 127, ../sass/screen.scss */
 .new:after {
-  content: "new";
+  content: "new - help me!";
   background-color: white;
 }
 

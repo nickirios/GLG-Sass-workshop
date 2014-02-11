@@ -114,7 +114,7 @@ header {
 .sched-for-term {
 	position: relative;
 	&:after {
-		content: "help me!";
+		content: $cryForHelp;
 		position: absolute;
 		top: 0;
 		right: 0;
@@ -125,7 +125,7 @@ header {
 .new {
 	@extend .sched-for-term;
 	&:after {
-		content: "new";
+		content: "new - " + $cryForHelp;
 		background-color: $newFlag_bkgdColor;
 	}
 }
