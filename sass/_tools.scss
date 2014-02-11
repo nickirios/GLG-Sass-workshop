@@ -40,9 +40,9 @@
 			content: ">";
 		} @else if $direction == "left" {
 			content: "<";
-		} /* @else if $direction == "up" {
-			@warn "Used up";
-		} */
+		} @else {
+			@warn "No direction specified, used default 'right'";
+		}
 	}
 	&:hover, &:focus {
 		color: $ctaLink_hover;

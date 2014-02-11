@@ -1,5 +1,5 @@
 /* -------------------------------------------------------------------------*/
-/* line 17, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 17, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -21,45 +21,45 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* line 22, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 22, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 html {
   line-height: 1;
 }
 
-/* line 24, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 24, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 ol, ul {
   list-style: none;
 }
 
-/* line 26, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 26, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 28, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 28, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 caption, th, td {
   text-align: left;
   font-weight: normal;
   vertical-align: middle;
 }
 
-/* line 30, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 30, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q, blockquote {
   quotes: none;
 }
-/* line 103, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 103, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 q:before, q:after, blockquote:before, blockquote:after {
   content: "";
   content: none;
 }
 
-/* line 32, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 32, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 a img {
   border: none;
 }
 
-/* line 116, ../../../../.rvm/gems/ruby-2.0.0-p353/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+/* line 116, ../../../../../../Ruby193/lib/ruby/gems/1.9.1/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
   display: block;
 }
@@ -284,20 +284,17 @@ header select {
   right: 0;
   /* 6 */
   content: ">";
-  /* @else if $direction == "up" {
-	@warn "Used up";
-} */
 }
 /* line 47, ../sass/_tools.scss */
 #featured-kitten a:hover, #featured-kitten a:focus {
   color: #6da4bc;
 }
 
-/* line 100, ../sass/screen.scss */
+/* line 101, ../sass/screen.scss */
 .kitten-mug {
   padding-bottom: 2em;
 }
-/* line 105, ../sass/screen.scss */
+/* line 106, ../sass/screen.scss */
 .kitten-mug a {
   display: block;
   text-align: right;
@@ -312,9 +309,6 @@ header select {
   right: 0;
   /* 6 */
   content: ">";
-  /* @else if $direction == "up" {
-	@warn "Used up";
-} */
 }
 /* line 47, ../sass/_tools.scss */
 .kitten-mug a:hover, .kitten-mug a:focus {
@@ -322,11 +316,11 @@ header select {
 }
 
 /* 2 - build this one together, have them modify this however they want */
-/* line 113, ../sass/screen.scss */
+/* line 114, ../sass/screen.scss */
 .sched-for-term, .new {
   position: relative;
 }
-/* line 115, ../sass/screen.scss */
+/* line 116, ../sass/screen.scss */
 .sched-for-term:after, .new:after {
   content: "help me!";
   position: absolute;
@@ -336,22 +330,22 @@ header select {
   padding: 5px;
 }
 
-/* line 126, ../sass/screen.scss */
+/* line 127, ../sass/screen.scss */
 .new:after {
   content: "new";
   background-color: white;
 }
 
 /**/
-/* line 133, ../sass/screen.scss */
+/* line 134, ../sass/screen.scss */
 footer {
   text-align: center;
 }
-/* line 135, ../sass/screen.scss */
+/* line 136, ../sass/screen.scss */
 footer small {
   font-size: 0.75em;
 }
-/* line 138, ../sass/screen.scss */
+/* line 139, ../sass/screen.scss */
 footer ul {
   margin-top: 1em;
 }
@@ -417,7 +411,7 @@ footer ul {
 }
 
 @media screen and (min-width: 650px) {
-  /* line 145, ../sass/screen.scss */
+  /* line 146, ../sass/screen.scss */
   #main-content {
     clear: both;
   }
@@ -429,36 +423,36 @@ footer ul {
     height: 0;
   }
 
-  /* line 148, ../sass/screen.scss */
+  /* line 149, ../sass/screen.scss */
   .kitten-mug {
     width: 50%;
     float: left;
     padding: 0 1em 2em 1em;
   }
 
-  /* line 153, ../sass/screen.scss */
+  /* line 154, ../sass/screen.scss */
   .kitten-mug:nth-of-type(odd) {
     padding-left: 0;
   }
 
-  /* line 156, ../sass/screen.scss */
+  /* line 157, ../sass/screen.scss */
   .kitten-mug:nth-of-type(even) {
     padding-right: 0;
   }
 
-  /* line 160, ../sass/screen.scss */
+  /* line 161, ../sass/screen.scss */
   .sched-for-term:nth-of-type(odd):after, .new:nth-of-type(odd):after, .new:nth-of-type(odd):after {
     right: 1em;
   }
 }
 @media screen and (min-width: 800px) {
-  /* line 167, ../sass/screen.scss */
+  /* line 168, ../sass/screen.scss */
   body {
     max-width: 75em;
     margin: 0 auto;
   }
 
-  /* line 171, ../sass/screen.scss */
+  /* line 172, ../sass/screen.scss */
   #featured-kitten {
     clear: both;
     padding: 0;
@@ -470,13 +464,13 @@ footer ul {
     clear: both;
     height: 0;
   }
-  /* line 174, ../sass/screen.scss */
+  /* line 175, ../sass/screen.scss */
   #featured-kitten img {
     float: left;
     width: 50%;
     padding-right: 1em;
   }
-  /* line 179, ../sass/screen.scss */
+  /* line 180, ../sass/screen.scss */
   #featured-kitten div {
     float: left;
     width: 50%;

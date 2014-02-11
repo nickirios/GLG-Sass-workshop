@@ -93,6 +93,7 @@ header {
 		padding-top: 1em;
 	}
 	a {
+		//remove the "right" below to see our @warn example in action
 		@include cta_arrow(right, 0.7em);
 		font-weight: bold;
 	}
